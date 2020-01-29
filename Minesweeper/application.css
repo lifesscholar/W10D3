@@ -1,0 +1,72 @@
+.row {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tile {
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  font-size: 15px;
+  box-sizing: border-box;
+  border-style: outset;
+  /* border-right: 2px solid #888;
+  border-bottom: 2px solid #888;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee; */
+  background-color: #d5d5d5;
+}
+
+.tile.explored {
+  border-style: inset;
+  /* border-right: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #888;
+  border-left: 2px solid #888; */
+}
+
+
+div {
+  display: block;
+}
+
+#root {
+  margin: 0 auto;
+  width: 350px;
+
+}
+
+#root > h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#root > div {
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+}
+
+.modal-screen {
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-content {
+  z-index: 3;
+  background-color: white;
+  width: 150px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 7px;
+  top: 400px;
+  position: relative;
+}
